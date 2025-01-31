@@ -11,9 +11,7 @@
 
 (maintainers "Georgiy Belyanin <belyaningeorge@ya.ru>")
 
-(license LICENSE)
-
-(documentation https://url/to/documentation)
+(license BSD-3-Clause)
 
 (package
  (name tarantool_ml)

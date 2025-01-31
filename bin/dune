@@ -1,0 +1,4 @@
+(executable
+ (public_name tarantool_ml)
+ (name main)
+ (libraries tarantool_ml))

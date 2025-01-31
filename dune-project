@@ -5,7 +5,7 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github georgiy-belyanin/tarantool-ml))
 
 (authors "Georgiy Belyanin <belyaningeorge@ya.ru>")
 

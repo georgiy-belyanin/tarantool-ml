@@ -6,8 +6,8 @@ maintainer: ["Georgiy Belyanin <belyaningeorge@ya.ru>"]
 authors: ["Georgiy Belyanin <belyaningeorge@ya.ru>"]
 license: "BSD-3-Clause"
 tags: ["dbms" "tarantool"]
-homepage: "https://github.com/username/reponame"
-bug-reports: "https://github.com/username/reponame/issues"
+homepage: "https://github.com/georgiy-belyanin/tarantool-ml"
+bug-reports: "https://github.com/georgiy-belyanin/tarantool-ml/issues"
 depends: [
   "dune" {>= "3.17"}
   "ocaml"
@@ -27,4 +27,4 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/username/reponame.git"
+dev-repo: "git+https://github.com/georgiy-belyanin/tarantool-ml.git"

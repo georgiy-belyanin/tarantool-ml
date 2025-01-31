@@ -1,6 +1,6 @@
 (lang dune 3.17)
 
-(name tarantool_ml)
+(name tarantool)
 
 (generate_opam_files true)
 
@@ -14,7 +14,7 @@
 (license BSD-3-Clause)
 
 (package
- (name tarantool_ml)
+ (name tarantool)
  (synopsis "Tarantool client for OCaml")
  (description "Tarantool client for OCaml")
  (depends ocaml)

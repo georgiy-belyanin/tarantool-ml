@@ -1,2 +1,3 @@
 (library
- (name tarantool_ml))
+ (name tarantool)
+ (public_name tarantool))

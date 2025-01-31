@@ -11,6 +11,10 @@ bug-reports: "https://github.com/georgiy-belyanin/tarantool-ml/issues"
 depends: [
   "dune" {>= "3.17"}
   "ocaml"
+  "ctypes"
+  "ctypes-foreign"
+  "ppx_expect" {with-test}
+  "ppx_inline_test" {with-test}
   "odoc" {with-doc}
 ]
 build: [

@@ -7,11 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - uses: ocaml/setup-ocaml@v3
         with: 
           ocaml-compiler: 5
 
-      - name: Install depedencies
+      - name: Install OCaml depedencies
         run: opam install . --deps-only --with-test
 
       - name: Format

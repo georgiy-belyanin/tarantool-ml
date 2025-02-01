@@ -17,7 +17,18 @@
  (name tarantool)
  (synopsis "Tarantool client for OCaml")
  (description "Tarantool client for OCaml")
- (depends ocaml)
+ (depends
+  ocaml
+  ctypes
+  ctypes-foreign
+  ppx_deriving
+  (ppx_expect :with-test)
+  (ppx_inline_test :with-test)
+  (ocamlformat
+   (and
+    (= 0.27.0)
+    :dev))
+  )
  (tags
   ("dbms" "tarantool" )))
 

@@ -1,3 +1,7 @@
 (library
  (name tarantool)
- (public_name tarantool))
+ (public_name tarantool)
+ (modules Tnt)
+ (libraries ctypes ctypes-foreign)
+ (preprocess
+  (pps ppx_deriving.enum ppx_inline_test ppx_assert ppx_expect)))

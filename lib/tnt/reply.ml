@@ -11,7 +11,7 @@ let _free = foreign "tnt_reply_free" (ptr c_t @-> returning void)
 
 type t = Reply of c_t Ctypes_static.ptr
 
-let init () = Reply (_init Ctypes.null)
+let init () = Reply (_init null)
 
 let free (Reply r) = _free r
 

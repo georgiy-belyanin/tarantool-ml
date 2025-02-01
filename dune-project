@@ -19,6 +19,23 @@
  (description "Tarantool client for OCaml")
  (depends
   ocaml
+  ppx_deriving
+  (ppx_expect :with-test)
+  (ppx_inline_test :with-test)
+  (ocamlformat
+   (and
+    (= 0.27.0)
+    :dev))
+  )
+ (tags
+  ("dbms" "tarantool" )))
+
+(package
+ (name tnt)
+ (synopsis "Tarantool iproto library for OCaml")
+ (description "Tarantool iproto library for OCaml")
+ (depends
+  ocaml
   ctypes
   ctypes-foreign
   ppx_deriving
@@ -33,3 +50,4 @@
   ("dbms" "tarantool" )))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html
+

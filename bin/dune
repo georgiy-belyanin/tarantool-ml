@@ -1,4 +1,5 @@
 (executable
  (name main)
  (public_name tarantool)
+ (package tarantool)
  (libraries tarantool))

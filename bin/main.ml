@@ -12,6 +12,7 @@ let connect_and_ping_request () =
   let _ = Request.compile stream request in
   let* _ = Stream.read_reply stream in
   Result.ok ()
+;;
 
 let _connect_and_ping () =
   let stream = Stream.net () in
@@ -22,10 +23,10 @@ let _connect_and_ping () =
   let* () = Stream.ping stream in
   let* _ = Stream.read_reply stream in
   Result.ok ()
+;;
 
 let () =
   match connect_and_ping_request () with
-    | Ok () ->
-        Format.printf "Pinged!\n"
-    | Error code ->
-        Format.printf "Failed with error %d\n" code
+  | Ok () -> Format.printf "Pinged!\n"
+  | Error code -> Format.printf "Failed with error %d\n" code
+;;

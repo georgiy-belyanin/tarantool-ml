@@ -2,4 +2,6 @@
  (name main)
  (public_name tarantool)
  (package tarantool)
- (libraries tarantool))
+ (libraries tarantool msgpck ppx_protocol_conv_msgpack)
+ (preprocess
+  (pps ppx_protocol_conv)))

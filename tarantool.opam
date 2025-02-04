@@ -10,8 +10,11 @@ homepage: "https://github.com/georgiy-belyanin/tarantool-ml"
 bug-reports: "https://github.com/georgiy-belyanin/tarantool-ml/issues"
 depends: [
   "dune" {>= "3.17"}
+  "msgpck"
   "ocaml"
   "ppx_deriving"
+  "ppx_protocol_conv"
+  "ppx_protocol_conv_msgpack"
   "ppx_expect" {with-test}
   "ppx_inline_test" {with-test}
   "ocamlformat" {= "0.27.0" & dev}

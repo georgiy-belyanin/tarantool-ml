@@ -1,7 +1,7 @@
 (library
  (name tnt)
  (public_name tnt)
- (modules opt reply request stream tnt)
+ (modules object opt reply request stream tnt)
  (libraries ctypes ctypes-foreign)
  (preprocess
   (pps ppx_deriving.enum ppx_inline_test ppx_assert ppx_expect)))

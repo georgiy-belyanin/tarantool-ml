@@ -64,3 +64,4 @@ let read_reply (Stream s) =
 ;;
 
 let c (Stream s) = s
+let of_c c = Stream c

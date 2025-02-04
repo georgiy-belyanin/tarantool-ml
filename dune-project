@@ -18,8 +18,11 @@
  (synopsis "Tarantool client for OCaml")
  (description "Tarantool client for OCaml")
  (depends
+  msgpck
   ocaml
   ppx_deriving
+  ppx_protocol_conv
+  ppx_protocol_conv_msgpack
   (ppx_expect :with-test)
   (ppx_inline_test :with-test)
   (ocamlformat

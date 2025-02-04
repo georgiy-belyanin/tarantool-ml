@@ -11,3 +11,4 @@ type c_t
 
 val c_t : c_t Ctypes_static.structure Ctypes.typ
 val c : t -> c_t Ctypes_static.structure Ctypes_static.ptr
+val of_c : c_t Ctypes_static.structure Ctypes_static.ptr -> t
